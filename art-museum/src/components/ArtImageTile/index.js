@@ -6,9 +6,10 @@ function ArtImageTile({art,gallery}){
     return (
         <>
         <h1>In art image {firstImage.imageid} for object {art.objectnumber}</h1>
-        <Link to={`/galleries/${gallery.galleryid}/art/${firstImage.imageid}`}>
+        <Link to={`/galleries/${gallery.galleryid}/art/${art.objectid}`}>
         <img src={firstImage.baseimageurl} alt={firstImage.title} />
         </Link>
+
         </>
       );
 }
